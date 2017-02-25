@@ -1,0 +1,42 @@
+<script>
+
+stud = {}
+
+stud['name'] = "Almas"
+
+stud['surname'] = "Tolegen"
+
+stud['sport'] = ["Boxing"]
+
+stud.points = {
+	"oop": 100,
+	"js": 90,
+	"math": 95,
+        "sport": 100,
+        "rus":90
+}
+
+stud2 = {
+	name: "Salamat",
+	surname: "Tulkibaev"
+}
+array = [stud, stud2]
+array.push(stud)
+array.push(stud2)
+
+console.log(stud);
+
+console.log(stud["surname"]);
+console.log(stud.points.js);
+delete stud.name;
+console.log(stud.name);
+stud.name = "Manas"
+console.log(stud.name);
+
+function calc(stud){
+
+	return (stud.points.oop+stud.points.js+stud.points.sport+stud.points.math+stud.points.rus)/5
+}
+console.log(stud)
+</script>
+</html>
